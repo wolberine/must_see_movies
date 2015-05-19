@@ -39,6 +39,18 @@
           </div>
         </div>
       </div>
+
+
+
+      <ul class="list-group">
+        <li class="list-group-item list-group-item-success">Filmography</li>
+        <% @director.movies.each do |movie| %>
+          <li class="list-group-item">
+            <%= movie.title %>
+          </li>
+        <% end %>
+      </ul>
+
     </div>
   </div>
 </div>
